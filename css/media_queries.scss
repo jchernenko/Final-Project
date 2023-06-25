@@ -1,0 +1,103 @@
+/* Styling for media queries */
+@media only screen and (max-width: 1500px) {
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+
+	h1 {
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.button {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+
+	h1 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 14px;
+	}
+
+	.inside-box p {
+		font-size: 16px;
+	}
+
+	.inside-box {
+		display: inline-block;
+	}
+
+	.player-section {
+		display: block;
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	  
+	.computer-section {
+		display: block;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.button {
+		font-size: 18px;
+		padding: 10px;
+	}
+}
+  
+@media only screen and (max-width: 500px) {
+
+	header {
+		display: block;
+		padding: 5px;
+	}
+  
+	nav ul {
+	  	display: block;
+	  	text-align: center;
+	  	padding: 5px;
+	}
+  
+	.active {
+	  	display: block;
+	  	align-items: center;
+	}
+  
+	nav ul li a {
+	  	display: block;
+	  	font-size: 20px;
+	  	width: 100%;
+	  	margin-bottom: 8px;
+	  	align-items: center;
+	  	padding: 2px;
+	}
+  
+	h1 {
+	  	font-size: 30px;
+	}
+  
+	.outside-box p {
+	  	font-size: 16px;
+	}
+  
+	footer p {
+	  	font-size: 12px;
+	}
+}

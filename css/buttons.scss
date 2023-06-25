@@ -1,0 +1,35 @@
+/* Styling for buttons */ 
+.button-container {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+  
+.button {
+	display: inline-block;
+	margin: 5px;
+	margin-bottom: 15px;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+	font-family: $secondary-font-family;
+	@include box($button-color, #000, 10px 20px, 0px 3px 3px $box-shadow-color);
+}
+  
+.button:hover {
+	background-color: white;
+	color: $button-color;
+	border: 2px solid $button-color;
+	box-shadow: 5px 5px 0px $button-color;
+}
+  
+.button:active {
+	background-color: #fcf414;
+	box-shadow: none;
+	transform: translateY(4px);
+}

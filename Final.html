@@ -1,0 +1,114 @@
+<!-- Jeff Chernenko | A00745858 | COMP 2132 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tab Title -->
+        <title>Final Project | Home</title>
+
+        <!-- External Style Sheet CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- External Style Sheet Link for Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/modern-typewriter" rel="stylesheet">
+
+        <!-- External JavaScript & JQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="js/script.js" defer="defer"></script>
+    </head>
+
+    <body>
+
+        <!-- Header Section & Navigation Bar -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Final.html" class="active" target="_self">Home</a></li>
+                 </ul>
+            </nav>
+        </header>
+
+        <!-- Overlay-->
+        <div id="overlay"></div>
+
+        <!-- Pop-Up Display -->
+        <div id="popup-container">
+            <div id="popup-message"></div>
+        </div>
+
+        <!--Wrapper-->
+        <div class="wrapper">
+
+            <!-- Page Title -->
+            <div id="title">
+                <h1>Dice Game</h1>
+            </div>
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Outside Box -->
+                <div class="outside-box">
+
+                    <!-- Inside Box -->
+                    <div class="inside-box">
+                    
+                            <!-- Player Section -->
+                            <div class="player-section">
+
+                                <h3>Player</h3>
+                                <p>Current Roll: <span id="player-roll"></span></p>
+
+                                <div class="dice-row" id="player-dice">
+                                    <img class="dice-image" src="images/dice0.png" alt="blank dice">
+                                    <img class="dice-image" src="images/dice0.png" alt="blank dice">
+                                </div>
+
+                                <p>Round Score: <span id="player-score"></span></p>
+                                <p>Total Score: <span id="player-total"></span></p>
+                            </div>
+
+                            <!-- Computer Section -->
+                            <div class="computer-section">
+
+                                <h3>Computer</h3>
+                                <p>Current Roll: <span id="computer-roll"></span></p>
+
+                                <div class="dice-row" id="computer-dice">
+                                    <img class="dice-image" src="images/dice0.png" alt="blank dice">
+                                    <img class="dice-image" src="images/dice0.png" alt="blank dice">
+                                </div>
+
+                                <p>Round Score: <span id="computer-score"></span></p>
+                                <p>Total Score: <span id="computer-total"></span></p>
+                            </div>
+
+                        <div class="message" id="message"></div>
+
+                   </div> <!-- Inside Box -->
+
+                   <!-- Button Section -->
+                   <div class="button-container">
+
+                        <button class="button" id="rollDice" onclick="rollDice()">Roll Dice</button>
+                        <button class="button" id="resetGame" onclick="resetGame()">Reset Game</button>
+                    </div>
+
+                </div> <!-- Outside Box -->
+            </div> <!-- Container -->
+        </div> <!-- Wrapper -->
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; J.Chernenko A00745858 | COMP2132 Final Project | All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
