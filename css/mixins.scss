@@ -1,4 +1,4 @@
-/* ContainerBox Mixin */
+/* Box Mixin */
 @mixin box($background-color, $border-color, $padding, $box-shadow) {
 	background-color: $background-color;
 	border: 2px solid $border-color;
